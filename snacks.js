@@ -44,3 +44,28 @@ console.log(filtered);
 /* 10) Somma tutti i valori dell’array */
 const sommaArray = arr1.reduce((accumulator, current) => accumulator + current, 0);
 console.log(sommaArray);
+
+
+/* ---------- OGGETTI ---------- */
+
+/* 11) Stampa il nome dell’utente */
+const user = { name: "Luca", age: 30 };
+console.log(user.name);
+
+/* 12) Stampa l’età usando le [] */
+console.log(`[${user.age}]`);
+
+/* 13) Aggiungi city: "Roma" e stampa l’oggetto */
+user.city = "Roma";
+console.log(user); //controllato
+
+/* 14) Destruttura name e stampalo */
+const nomeTizio = user.name;
+console.log(nomeTizio);
+
+/* 15) Verifica se esiste "city" */
+if(user.city){
+  console.log(true);
+}else {
+  console.log(false);
+}
