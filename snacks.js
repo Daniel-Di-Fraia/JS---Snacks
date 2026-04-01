@@ -69,3 +69,67 @@ if(user.city){
 }else {
   console.log(false);
 }
+
+
+/* ---------- FUNZIONI ---------- */
+
+/* 16) Crea una funzione che somma 2 numeri e stampala */
+function SommaNumeri(a,b){
+  return a + b;
+}
+console.log(SommaNumeri(3,4));
+
+/* 17) Crea una arrow function che ritorna 10 e stampala */
+const ten = () => 10; 
+console.log(ten);
+
+/* 18) Stampa il valore ritornato dalla funzione */
+function test(a) {
+  return;
+  a * 2;
+}
+console.log(test(2));
+
+/* 19) Esegui una IIFE che stampa "JS" */
+(function() {
+    console.log("JS");
+})(); //controllato
+
+/*20) Usa una funzione che ritorna un’altra funzione per sommare 2 e 3 */
+function sommatore(x) {
+  return function (y) {
+    return x + y;
+  };
+}
+const add2 = sommatore(2);
+console.log(add2(3)); //controllato
+
+
+
+/* ---------- SCOPE / HOISTING ---------- */
+
+/* 21) Stampa x prima della dichiarazione */
+console.log(x2);
+var x2 = 10;
+
+/* 22) Prova a stampare y prima della dichiarazione */
+// console.log(y);
+// let y = 10;
+
+/* 23) Stampa a fuori dal blocco */
+{
+  let a2 = 1;
+}
+// console.log(a2);
+
+/* 24) Stampa il valore di a dentro la funzione */
+let a3 = 1;
+function prova() {
+  let a3 = 2;
+  console.log(a3);
+}
+prova(); //controllato
+
+/* 25) Stampa a prima della dichiarazione con let */
+// console.log(a4);
+let a4 = 3;
