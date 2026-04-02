@@ -133,3 +133,59 @@ prova(); //controllato
 /* 25) Stampa a prima della dichiarazione con let */
 // console.log(a4);
 let a4 = 3;
+
+
+/* ---------- ARRAY AVANZATI ---------- */
+
+/* 26) Stampa ogni elemento */
+const nums1 = [1, 2, 3];
+nums1.forEach((val) => console.log(val)); //controllato
+
+/* 27) Crea un nuovo array aggiungendo 1 a ogni valore */
+const newArray = nums1.map((val) => val + 1);
+console.log(newArray);
+
+/* 28) Trova il primo numero > 1 */
+const trovare = nums1.find((val) => val > 1);
+console.log(trovare);
+
+/* 29) Verifica se tutti i numeri sono pari */
+for(let i=0; i<nums1.length; i++){
+  if(nums1[i] % 2 !== 0){
+    pariODisp = false;
+  } else {
+    pariODisp = true;
+  }
+}
+console.log(pariODisp);
+// const tuttiPari = nums1.every(n => n % 2 === 0);
+// console.log(tuttiPari);
+
+/* 30) Verifica se almeno un numero è pari */
+const almenoPari = nums1.some((val) => val % 2 === 0);
+console.log(almenoPari);
+
+
+/* ---------- STRINGHE ---------- */
+
+/* 31) Stampa la stringa in maiuscolo */
+const s1 = "ciao";
+console.log(s1.toUpperCase());
+
+/* 32) Stampa la lunghezza */
+const s2 = "JS";
+console.log(s2.length);
+
+/* 33) Verifica se contiene "e" */
+const s3 = "hello";
+if(s3.includes('e')){
+  console.log("contiene la lettera e");
+}
+
+/* 34) Trasforma in array */
+const s4 = "a,b,c";
+console.log(s4.split());
+
+/* 35) Rimuovi gli spazi */
+const s5 = "  test  ";
+console.log(s5.trim());
