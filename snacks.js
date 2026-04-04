@@ -189,3 +189,60 @@ console.log(s4.split());
 /* 35) Rimuovi gli spazi */
 const s5 = "  test  ";
 console.log(s5.trim());
+
+
+/* ---------- ASYNC / PROMISE ---------- */
+
+// /* 36) Stampa in ordine corretto */
+// console.log("A");
+// // setTimeout(() => console.log("B"), 0);
+// // setTimeout(() => console.log("C"), 0);
+
+// /* 37) Stampa il valore della Promise */
+// Promise.resolve(5);
+// Promise.resolve(5).then(value => console.log(value));
+
+// /* 38) Stampa cosa ritorna una funzione async */
+// async function f() {
+//   return 10;
+// }
+// f().then(value => console.log(value));
+
+// /* 39) Stampa il valore risolto dalla Promise */
+// async function testAsync() {
+//   const n = await Promise.resolve(3);
+// }
+// testAsync().then(value => console.log(value));
+
+// /* 40) Gestisci e stampa l’errore */
+// Promise.reject("err");
+// Promise.reject("err").catch(err => console.log(err));
+
+
+/* ---------- Generici ---------- */
+
+/* 41) Confronta due array vuoti */
+// [] == [];
+const ciao = [];
+const addio = [];
+console.log(ciao == addio);
+
+/* 42) Confronta array vuoto e false */
+// [] == false;
+const ciaoz = [];
+const addioz = false;
+console.log(ciaoz == addioz);
+
+/* 43) Stampa il risultato */
+// {} + [];
+console.log(({}) + []);
+
+
+/* 44) Somma i boolean */
+// true + true;
+console.log(true + true);
+
+
+/* 45) Converti la stringa in boolean */
+// ""
+console.log(Boolean(""));
