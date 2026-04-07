@@ -246,3 +246,33 @@ console.log(true + true);
 /* 45) Converti la stringa in boolean */
 // ""
 console.log(Boolean(""));
+
+
+/* ---------- DESTRUCTURING / SPREAD ---------- */
+
+/* 46) Destruttura il secondo valore */
+const arr2 = [1, 2];
+const [, secondo] = arr2;
+console.log(secondo);
+
+/* 47) Destruttura x dall’oggetto */
+const obj = { val: 1, val2: 2 };
+const { val } = obj;
+console.log(val);
+
+/* 48) Usa lo spread per creare [1,2,3] */
+const base = [1, 2];
+const arrNuovo1 = [...base, 3];
+console.log(arrNuovo1);
+
+
+/* 49) Conta gli argomenti */
+function sum(...n) {console.log(n.length)}
+sum(1);
+sum(2,3,7);
+
+/* 50) Modifica l’oggetto tramite riferimento */
+const o = { a: 1 };
+const p = o;
+p.a = 999;
+console.log(o.a);
